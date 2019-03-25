@@ -10,7 +10,7 @@
     "node": ">=8"
   },
   "dependencies": {
-    "mountebank": "1.16.0"
+    "mountebank": "2.0.0"
   },
   "devDependencies": {},
   "repository": {
