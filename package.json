@@ -1,0 +1,35 @@
+{
+  "name": "mockritsa",
+  "version": "1.0.0",
+  "description": "Docker image for mountebank",
+  "main": "start.js",
+  "scripts": {
+    "dev": "PORT_API=1025 PORT_MOCK=1026 node start.js"
+  },
+  "engine": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "mountebank": "1.16.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doochik/mockritsa.git"
+  },
+  "keywords": [
+    "mountebank",
+    "mock",
+    "api"
+  ],
+  "author": "Aleksei Androsov <https://github.com/doochik>",
+  "contributors": [
+    "Natalia Stus <https://github.com/arminaairen>",
+    "Dmitry Svichikhin <https://github.com/dimas7>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doochik/mockritsa/issues"
+  },
+  "homepage": "https://github.com/doochik/mockritsa#readme"
+}
