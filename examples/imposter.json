@@ -1,0 +1,29 @@
+{
+  "port": 42000,
+  "protocol": "http",
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "equals": {
+            "path": "/api/1.0/test/",
+            "method": "GET"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "result": "this is mock response",
+              "status": "SUCCESS"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,23 @@ This solution uses only 2 ports (api and mock).
 
 ## Usage
 
-TODO
+Pass env variables to container and expose ports
+
+`docker run -d -e PORT_API=1025 -e PORT_MOCK=1026 -p 1025:1025 -p 1026:1026 mockritsa`
+
+Now you can view mountebank interface at `localhost:1025` and mock server at `localhost:1026`.
+
+Example:
+1. Create imposter `curl -X POST 'localhost:1025/imposters' --data @examples/imposter.json` (example imposter uses port 42000)
+2. Test created imposter
+```
+$ curl -s 'localhost:1026/api/1.0/test/' --cookie 'mockritsa_imposter=42000'
+{
+    "result": "this is mock response",
+    "status": "SUCCESS"
+}
+```
+3. Any other request from example will response with 200 OK and empty body. This is default mountebank behaviour. 
 
 ## Development
 
