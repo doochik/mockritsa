@@ -2,7 +2,7 @@
 
 # mockritsa
 
-Docker image for [moutebank](http://www.mbtest.org) mock server.
+[Docker image](https://hub.docker.com/r/doochik/mockritsa) for [moutebank](http://www.mbtest.org) mock server.
 
 ## Motivation and architecture
 
