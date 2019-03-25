@@ -2,7 +2,7 @@
 
 const PORT = process.env.PORT_MOCK;
 if (!PORT) {
-    throw new Error('Failed to start MOCK server! Port is undefined!');
+    throw new Error('Failed to start MOCK server! env.PORT_MOCK is undefined!');
 }
 
 const http = require('http');

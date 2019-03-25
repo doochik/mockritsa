@@ -2,7 +2,7 @@
 
 const PORT = process.env.PORT_API;
 if (!PORT) {
-    throw new Error('Failed to start API server! Port is undefined!');
+    throw new Error('Failed to start API server! env.PORT_API is undefined!');
 }
 
 const http = require('http');
