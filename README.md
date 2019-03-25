@@ -1,3 +1,5 @@
+![logo](./logo.jpg)
+
 # mockritsa
 
 Docker image for [moutebank](http://www.mbtest.org) mock server.
