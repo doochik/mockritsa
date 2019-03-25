@@ -18,7 +18,7 @@ This solution uses only 2 ports (api and mock).
 
 Pass env variables to container and expose ports
 
-`docker run -d -e PORT_API=1025 -e PORT_MOCK=1026 -p 1025:1025 -p 1026:1026 mockritsa`
+`docker run -d -e PORT_API=1025 -e PORT_MOCK=1026 -p 1025:1025 -p 1026:1026 doochik/mockritsa`
 
 Now you can view mountebank interface at `localhost:1025` and mock server at `localhost:1026`.
 
